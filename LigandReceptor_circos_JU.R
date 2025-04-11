@@ -5,6 +5,8 @@
 library("CellChat")
 library("circlize")
 library("ComplexHeatmap")
+library("dplyr")
+library("tidyr")
 
 # get CellChat list of ligand-receptors
 db = CellChat::CellChatDB.human
