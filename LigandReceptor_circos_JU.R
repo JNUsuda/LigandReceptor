@@ -26,10 +26,9 @@ df3 = db2 %>%
 # filter CellChat db for neurotransmitter pathways 
 db3 = db2 %>% dplyr::filter(pathway_name %in% df3$pathway_name)
 
-
 # tables for circos plot/chord diagram
 # load table with a list of genes of interest (one column named "Genes")
-tab2 = read.table(file = "./DEAs_AD_GSEbatch_megameta.tsv", header = T, sep = "\t")
+tab2 = read.table(file = "./LR_circos_example.tsv", header = T, sep = "\t")
 colnames(tab2) = "Genes"
 my_genes = tab2$Genes
 
