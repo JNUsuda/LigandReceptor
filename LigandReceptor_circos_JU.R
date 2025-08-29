@@ -173,7 +173,7 @@ circos.trackPlotRegion(track.index = 1, panel.fun = function(x, y) {
 tab_allu5 = tab_allu4 %>% ungroup() %>% 
   distinct(pathway_name, .keep_all = T) %>% 
   dplyr::arrange(pathway_name)
-lgd_points = Legend(at = as.character(levels(tab_allu5$pathway_name)), 
+lgd_points = Legend(at = as.character(unique(tab_allu5$pathway_name)), 
                     type = "grid", #squares
                     legend_gp = gpar(fill = tab_allu5$cores),
                     title_position = "topleft", 
